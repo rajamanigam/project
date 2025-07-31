@@ -1,0 +1,266 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+
+}
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #fcfcfc;
+    color: #333;
+}
+.header{
+    background-image: url("https://b.zmtcdn.com/web_assets/81f3ff974d82520780078ba1cfbd453a1583259680.png");
+    background-size: cover;
+    background-position: center;
+    height: 75vh;
+    width: 100vw;
+}
+
+.header h1{
+    font-size: 200px;
+    font-style: bold;
+    font-family: cursive;
+    color: #ffffff;
+    text-align: center;
+    padding-top: 20vh;
+    font-size: 3em;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+}
+
+.header p{
+    font-family: cursive;
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+    margin-top: 30px;
+    font-weight: 300;
+}
+.nav-bar {
+    position: absolute;
+    top: 10px;
+    right: 40px;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    padding: 12px 28px;
+    border-radius: 30px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+    z-index: 10;
+}
+
+.nav-bar ul {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-bar ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 8px 18px;
+    border-radius: 20px;
+    transition: background 0.3s, color 0.3s;
+    font-weight: 500;
+}
+
+.nav-bar ul li a:hover {
+    background: #ff6347;
+    color: #fff;
+}
+
+.nav-bar ul li a.active {
+    background: #ff6347;
+    color: #fff;
+}
+.add {
+    width: 80%;
+    text-align: center;
+    margin: 20px auto;
+    padding: 20px;
+}
+.add h2 {
+    font-size: 40px;
+    color: #333;
+    margin-bottom: 20px;
+}
+.add p{
+    padding: 10px;
+    font-size: 20px;
+    color: #666;
+    line-height: 1.6;
+}
+
+.add h3{
+    margin-top: 20px;
+    font-size: 30px;
+}
+.cities{
+    display: flex;
+    flex-wrap: wrap;
+    width: 70%;
+    margin: 30px auto;
+    min-height: 200px;
+    justify-content: center;
+    gap: 20px 30px;
+}
+.cities p{
+    flex: 1 1 28%;
+    max-width: 30%;
+    min-width: 180px;
+    box-sizing: border-box;
+    margin-bottom: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 300;
+    font-family: Okra, Helvetica, sans-serif;  
+    font-size: 1.6rem;
+    padding: 2rem 2.4rem;
+    border-radius: 0.8rem;
+    background: #FFFFFF;
+    border: 1px solid #E8E8E8;
+    cursor: pointer;
+    box-shadow: 0px 1.42623px 2.85246px rgba(28,28,28,0.08);
+    color: #333;
+}
+.cities p:hover {
+    background: #f0f0f0;
+    transform: scale(1.02);
+    transition: background 0.3s, transform 0.3s;
+}
+.cities p.active {
+    background: #ff6347;
+    color: #fff;
+    border: none;
+}
+.login {
+    margin-top: auto; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f9f9f9;
+    padding: 40px 0;
+}
+.login p{
+    font-size: 20px;
+    color: #666;
+    margin-bottom: 20px;
+}
+.login h2 {
+    font-size: 40px;
+    color: #ea0808;
+    margin-bottom: 20px;
+}
+.login form {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+}
+.login .register-link {
+    text-align: center;
+    margin-top: 20px;
+}
+.login form input {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+.login form button {
+    padding: 10px;
+    background-color: #ff6347;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.login form button:hover {
+    background-color: #e5533d;
+}
+.login form .error {
+    color: red;
+    font-size: 14px;
+    margin-top: -10px;
+    margin-bottom: 10px;
+}
+.login form .success {
+    color: green;
+    font-size: 14px;
+    margin-top: -10px;
+    margin-bottom: 10px;
+}
+.footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    width: 100%;
+    margin-top: auto;    /* Ensures footer stays at the bottom */
+    position: static;    /* Remove relative/absolute/fixed/sticky */
+}
+
+/* Add to your style.css */
+.footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 30px 0 10px 0;
+    width: 100%;
+    margin-top: auto;
+}
+.footer h2{
+    font-size: 40px;
+    margin-bottom: 10px;
+    color: #ff6347;
+}
+.footer p{
+    font-size: 19px;
+    margin-top: 20px;
+}
+.footer-links {
+    display: flex;
+    gap: 18px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+.social-icon {
+    margin-top: 30px;
+    width: 40px;
+    height: 40px;
+    filter: invert(1);
+    transition: transform 0.2s;
+}
+.social-icon:hover {
+    transform: scale(1.2);
+    filter: invert(44%) sepia(92%) saturate(7496%) hue-rotate(357deg) brightness(101%) contrast(101%);
+}
+.learn-more-link {
+    font-size: 30px;
+    margin-top: 30px;
+    color: #ff6347;
+    text-decoration: underline;
+    font-weight: 500;
+    margin-left: 10px;
+    transition: color 0.2s;
+}
+.learn-more-link:hover {
+    
+    color: #fff;
+}

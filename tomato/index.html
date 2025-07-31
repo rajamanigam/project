@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tomato</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="nav-bar">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">Add restaurant</a></li>
+          <li><a href="#login">Login</a></li>
+          <li><a href="#contact">contact</a></li>
+        </ul>
+      </nav>
+      <div class="header" id="home">
+        <h1>Welcome to Tomato</h1>
+        <p>Your destination for delicious foods</p>
+      </div>
+    </header>
+
+    <section class="restaurant" id="about">
+      <div class="add">
+        <h2>Popular locations in india</h2>
+        <p>
+          From swanky upscale restaurants to the cosiest hidden gems serving the
+          most incredible food, Zomato covers it all. Explore menus, and
+          millions of restaurant photos and reviews from users just like you, to
+          find your next great meal.
+        </p>
+        <hr />
+        <h3>Popular cities</h3>
+        <p>Explore the best restaurants in your city</p>
+
+        <div class="cities">
+          <p>Ahmedabad</p>
+          <p>Calcutta</p>
+          <p>Chennai</p>
+          <p>Agra</p>
+          <p>Trichy</p>
+          <p>Coimbatore</p>
+          <p>Nagpur</p>
+          <p>Bhopal</p>
+          <p>Bangalore</p>
+          <p>Hyderabad</p>
+          <p>Delhi</p>
+          <p>Mumbai</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="login" id="login">
+      <h2>Login</h2>
+      <form action="/login" method="POST">
+        <p>Please enter your credentials to login</p>
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required />
+        <br />
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required />
+        <br />
+        <button type="submit">Login</button>
+        <p class="register-link">
+          Don't have an account? <a href="#register">Register here</a>
+        </p>
+      </form>
+    </section>
+
+       <footer class="footer" id="contact">
+      <h2>Contact Us</h2>
+      <p>
+        For any queries or feedback, please reach out to us at
+        <a href="mailto:rajamanigam89@gmail.com">rajamanigam89@gmail.com</a>
+      </p>
+      <div class="footer-links">
+        <a href="https://facebook.com" target="_blank" aria-label="Facebook">
+          <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/facebook.svg" alt="Facebook" class="social-icon">
+        </a>
+        <a href="https://instagram.com" target="_blank" aria-label="Instagram">
+          <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg" alt="Instagram" class="social-icon">
+        </a>
+        <a href="https://twitter.com" target="_blank" aria-label="Twitter">
+          <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/twitter.svg" alt="Twitter" class="social-icon">
+        </a>
+        <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn">
+          <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/linkedin.svg" alt="LinkedIn" class="social-icon">
+        </a>
+        <a href="#learn-more" class="learn-more-link">Learn More</a>
+      </div>
+      <p style="margin-top:16px;">&copy; 2025 Tomato. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
